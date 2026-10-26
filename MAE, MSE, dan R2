@@ -1,0 +1,14 @@
+MAE (Mean Absolute Error), MSE (Mean Squared Error), dan R2 (R-squared) adalah metrik yang digunakan untuk mengevaluasi performa model regresi (prediksi angka) dalam machine learning.
+Berikut adalah penjelasan apakah nilai-nilainya harus mendekati angka 1 atau tidak:
+
+1. MAE dan MSE: TIDAK harus dekat dengan angka 1
+Untuk MAE dan MSE, target utamanya adalah semakin dekat dengan angka 0, semakin baik.
+• MAE (Rata-rata Kesalahan Absolut): Mengukur rata-rata error prediksimu dalam satuan yang sama dengan data aslinya. Jika MAE = 5, artinya rata-rata prediksimu meleset 5 poin dari data asli.
+• MSE (Rata-rata Kuadrat Kesalahan): Mirip dengan MAE, tetapi error-nya dikuadratkan terlebih dahulu. Metrik ini memberikan penalti yang besar untuk error yang fatal (outlier).
+• Kesimpulan: Jika MAE atau MSE mendekati 0, artinya modelmu sangat akurat dan hampir tidak ada error. Jika nilainya 1, belum tentu bagus atau jelek, karena semua tergantung pada skala data yang kamu miliki (misalnya, jika memprediksi harga rumah jutaan rupiah, MAE bernilai 1 itu luar biasa kecil, tapi jika memprediksi IPK mahasiswa, MAE bernilai 1 itu sangat besar).
+
+2. R2 (R-squared / Koefisien Determinasi): YA, harus dekat dengan angka 1
+Berbeda dengan MAE dan MSE, untuk R2, target utamanya adalah semakin dekat dengan angka 1, semakin baik.
+• R2 Score: Mengukur seberapa baik modelmu mampu menjelaskan variasi pada data. Skala nilai R2 umumnya berada di antara 0 hingga 1 (meskipun bisa bernilai negatif jika model sangat buruk).
+• Arti Angka: Jika R2 = 1, artinya modelmu 100% sempurna dalam memprediksi data. Jika R2 = 0.85, artinya 85% variasi data bisa dijelaskan dengan baik oleh modelmu.
+• Kesimpulan: Kamu selalu menginginkan nilai R2 sedekat mungkin dengan 1.
